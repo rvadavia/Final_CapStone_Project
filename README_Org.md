@@ -1,14 +1,8 @@
 >   **Abstract:**
 
-<<<<<<< HEAD
 >   My final capstone project is continuation of assigmnet 20 , which reflects my culmination of learning and understanding in ML in this coures, I have realized that there is still much more to learn to effectively apply it in a real-world context.
 
 >   We are currently in the process of developing an initial Pay-Per-Use dermatology Electronic Medical Record (EMR) solution specifically designed for the Indian market. One essential feature that would greatly assist doctors is a patient complaint triage system. However, our platform, https://symabMED.in, is not yet ready for deployment. To ensure the efficacy and dependability of our solution in real-world situations in India, our system needs to operate continuously for 12 to 18 months. During this phase, we will collect relevant metadata and high-resolution images, accurately categorized, which is crucial for the success of our solution.
-=======
->   My final capstone project is continuation of  assigmnet 20 , which reflects my culmination of learning and understanding in ML in this coures, I have realized that there is still much more to learn to effectively apply it in a real-world context.
-
->   For instance, I am developing the initial Pay-Per-Use dermatology Electronic Medical Record (EMR) solution tailored to the Indian market. A valuable feature that would greatly benefit doctors is a patient complaint triage system. However, our platform, https://symabMED.in, is not yet prepared for implementation. Our system must run continuously for 12 to 18 months to gather relevant metadata and high-resolution images with accurate categorization for a real-world scenario in India. This data collection phase is crucial to ensure the effectiveness and reliability of our solution.
->>>>>>> cc771fdab5d0779a2f65b9369a5c21b7714c3863
 
 ![A screenshot of a computer Description automatically generated with medium confidence](media/08a7bc76cabdf26c35148bb6281cfc58.png)
 
