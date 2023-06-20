@@ -41,7 +41,7 @@
 
 >   "Develop a machine learning model to assist dermatologists in India with triaging skin conditions. The model should classify different skin conditions based on images, aiding in quicker and more efficient preliminary diagnosis. The target is to improve the efficiency of dermatologists by reducing their workload, enabling them to focus on more complex and urgent cases. The model is not intended to replace human diagnosis but to supplement it, serving as a first-line screening tool."
 
--   Step 1: define a variable for the row CSV file
+-   Step 1: define the row CSV file
 -   Step 2: write a code for pre-processing the dataset
     -   Create DataFrame
     -   Sumerzies the datset inormation
