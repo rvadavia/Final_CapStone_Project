@@ -86,7 +86,7 @@
 |                  |   Befor |   After |
 |:-----------------|--------:|--------:|
 | age_approx       |      68 |       0 |
-| anatomy_sites    |     527 |      14 |
+| anatomy_sites    |     527 |      19 |
 | benign_malignant |       0 |       0 |
 | diagnosis        |       0 |       0 |
 | image_name       |       0 |       0 |
@@ -99,12 +99,12 @@
  ## Unique values befor & aftre  process :
 |                  |   Befor |   After |
 |:-----------------|--------:|--------:|
-| age_approx       |      18 |      16 |
+| age_approx       |      18 |      17 |
 | anatomy_sites    |       6 |       6 |
 | benign_malignant |       2 |       2 |
 | diagnosis        |       9 |       6 |
 | image_name       |   33126 |    1168 |
-| patient_id       |    2056 |     807 |
+| patient_id       |    2056 |     794 |
 | sex              |       2 |       2 |
 | target           |       2 |       2 |
 
@@ -113,14 +113,14 @@
  ## Value counts befor & aftre  process :
 |    | Column           | Value           |   Count Befor |   Count After |
 |---:|:-----------------|:----------------|--------------:|--------------:|
-|  0 | sex              | male            |         17080 |           658 |
-|  1 | sex              | female          |         15981 |           510 |
-|  2 | anatomy_sites    | torso           |         16845 |           540 |
-|  3 | anatomy_sites    | lower extremity |          8417 |           283 |
+|  0 | sex              | male            |         17080 |           679 |
+|  1 | sex              | female          |         15981 |           489 |
+|  2 | anatomy_sites    | torso           |         16845 |           565 |
+|  3 | anatomy_sites    | lower extremity |          8417 |           276 |
 |  4 | anatomy_sites    | upper extremity |          4983 |           198 |
-|  5 | anatomy_sites    | head/neck       |          1855 |           117 |
-|  6 | anatomy_sites    | palms/soles     |           375 |            11 |
-|  7 | anatomy_sites    | oral/genital    |           124 |             5 |
+|  5 | anatomy_sites    | head/neck       |          1855 |            92 |
+|  6 | anatomy_sites    | palms/soles     |           375 |            12 |
+|  7 | anatomy_sites    | oral/genital    |           124 |             6 |
 |  8 | benign_malignant | benign          |         32542 |           584 |
 |  9 | benign_malignant | malignant       |           584 |           584 |
 | 10 | target           | 0               |         32542 |           584 |
@@ -132,16 +132,14 @@
 |       |   age_approx |        target |   age_approx |      target |
 |:------|-------------:|--------------:|-------------:|------------:|
 | count |   33058      | 33126         |    1168      | 1168        |
-| mean  |      48.87   |     0.0176297 |      53.643  |    0.5      |
-| std   |      14.3804 |     0.131603  |      16.0207 |    0.500214 |
-| min   |       0      |     0         |      15      |    0        |
-| 25%   |      40      |     0         |      45      |    0        |
+| mean  |      48.87   |     0.0176297 |      53.339  |    0.5      |
+| std   |      14.3804 |     0.131603  |      15.6569 |    0.500214 |
+| min   |       0      |     0         |      10      |    0        |
+| 25%   |      40      |     0         |      40      |    0        |
 | 50%   |      50      |     0         |      55      |    0.5      |
 | 75%   |      60      |     0         |      65      |    1        |
 | max   |      90      |     1         |      90      |    1        |
 
-
-![Image](media//Count_plot_of_Befro_Blancing_diagnosis.png)
 
 ![Image](media//Count_plot_of_Befro_Blancing_sex.png)
 
@@ -153,7 +151,7 @@
 
 ![Image](media//Count_plot_of_Befro_Blancing_benign_malignant.png)
 
-![Image](media//Count_plot_of_After_Blancing_diagnosis.png)
+![Image](media//Count_plot_of_Befro_Blancing_diagnosis.png)
 
 ![Image](media//Count_plot_of_After_Blancing_sex.png)
 
@@ -164,6 +162,8 @@
 ![Image](media//Histogram_of_After_Blancing_target.png)
 
 ![Image](media//Count_plot_of_After_Blancing_benign_malignant.png)
+
+![Image](media//Count_plot_of_After_Blancing_diagnosis.png)
 
 
  Recommendations:
