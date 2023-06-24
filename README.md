@@ -136,9 +136,9 @@
 | age_approx       |      20 |      17 |
 | anatomy_sites    |       6 |       6 |
 | benign_malignant |       2 |       2 |
-| diagnosis        |       9 |       6 |
+| diagnosis        |       9 |       4 |
 | image_name       |   33126 |    1168 |
-| patient_id       |    2056 |     790 |
+| patient_id       |    2056 |     818 |
 | sex              |       2 |       2 |
 | target           |       2 |       2 |
 
@@ -147,13 +147,13 @@
  ## Value counts befor & aftre  process :
 |    | Column           | Value           |   Count Befor |   Count After |
 |---:|:-----------------|:----------------|--------------:|--------------:|
-|  0 | sex              | male            |         17145 |           658 |
-|  1 | sex              | female          |         15981 |           510 |
-|  2 | anatomy_sites    | torso           |         17372 |           589 |
-|  3 | anatomy_sites    | lower extremity |          8417 |           275 |
-|  4 | anatomy_sites    | upper extremity |          4983 |           187 |
-|  5 | anatomy_sites    | head/neck       |          1855 |           102 |
-|  6 | anatomy_sites    | palms/soles     |           375 |             9 |
+|  0 | sex              | male            |         17145 |           653 |
+|  1 | sex              | female          |         15981 |           515 |
+|  2 | anatomy_sites    | torso           |         17372 |           568 |
+|  3 | anatomy_sites    | lower extremity |          8417 |           278 |
+|  4 | anatomy_sites    | upper extremity |          4983 |           200 |
+|  5 | anatomy_sites    | head/neck       |          1855 |           106 |
+|  6 | anatomy_sites    | palms/soles     |           375 |            10 |
 |  7 | anatomy_sites    | oral/genital    |           124 |             6 |
 |  8 | benign_malignant | benign          |         32542 |           584 |
 |  9 | benign_malignant | malignant       |           584 |           584 |
@@ -166,11 +166,11 @@
 |       |   age_approx |        target |   age_approx |      target |
 |:------|-------------:|--------------:|-------------:|------------:|
 | count |   33126      | 33126         |    1168      | 1168        |
-| mean  |      48.8691 |     0.0176297 |      53.4104 |    0.5      |
-| std   |      14.3656 |     0.131603  |      15.9111 |    0.500214 |
+| mean  |      48.8691 |     0.0176297 |      52.8954 |    0.5      |
+| std   |      14.3656 |     0.131603  |      15.9541 |    0.500214 |
 | min   |       0      |     0         |      15      |    0        |
 | 25%   |      40      |     0         |      40      |    0        |
-| 50%   |      50      |     0         |      55      |    0.5      |
+| 50%   |      50      |     0         |      50      |    0.5      |
 | 75%   |      60      |     0         |      65      |    1        |
 | max   |      90      |     1         |      90      |    1        |
 
