@@ -64,12 +64,12 @@
  ## Unique values befor & aftre  process :
 |                  |   Befor |   After |
 |:-----------------|--------:|--------:|
-| age_approx       |      20 |      18 |
+| age_approx       |      20 |      16 |
 | anatomy_sites    |       6 |       6 |
 | benign_malignant |       2 |       2 |
-| diagnosis        |       9 |       4 |
+| diagnosis        |       9 |       5 |
 | image_name       |   33126 |    1168 |
-| patient_id       |    2056 |     804 |
+| patient_id       |    2056 |     785 |
 | sex              |       2 |       2 |
 | target           |       2 |       2 |
 
@@ -78,14 +78,14 @@
  ## Value counts befor & aftre  process :
 |    | Column           | Value           |   Count Befor |   Count After |
 |---:|:-----------------|:----------------|--------------:|--------------:|
-|  0 | sex              | male            |         17145 |           683 |
-|  1 | sex              | female          |         15981 |           485 |
-|  2 | anatomy_sites    | torso           |         17372 |           557 |
-|  3 | anatomy_sites    | lower extremity |          8417 |           281 |
-|  4 | anatomy_sites    | upper extremity |          4983 |           201 |
-|  5 | anatomy_sites    | head/neck       |          1855 |           111 |
-|  6 | anatomy_sites    | palms/soles     |           375 |            14 |
-|  7 | anatomy_sites    | oral/genital    |           124 |             4 |
+|  0 | sex              | male            |         17145 |           649 |
+|  1 | sex              | female          |         15981 |           519 |
+|  2 | anatomy_sites    | torso           |         17372 |           560 |
+|  3 | anatomy_sites    | lower extremity |          8417 |           276 |
+|  4 | anatomy_sites    | upper extremity |          4983 |           206 |
+|  5 | anatomy_sites    | head/neck       |          1855 |           104 |
+|  6 | anatomy_sites    | palms/soles     |           375 |            16 |
+|  7 | anatomy_sites    | oral/genital    |           124 |             6 |
 |  8 | benign_malignant | benign          |         32542 |           584 |
 |  9 | benign_malignant | malignant       |           584 |           584 |
 | 10 | target           | 0               |         32542 |           584 |
@@ -97,25 +97,27 @@
 |       |   age_approx |        target |   age_approx |      target |
 |:------|-------------:|--------------:|-------------:|------------:|
 | count |   33126      | 33126         |    1168      | 1168        |
-| mean  |      48.8691 |     0.0176297 |      53.5688 |    0.5      |
-| std   |      14.3656 |     0.131603  |      15.6788 |    0.500214 |
-| min   |       0      |     0         |      10      |    0        |
-| 25%   |      40      |     0         |      45      |    0        |
+| mean  |      48.8691 |     0.0176297 |      53.6558 |    0.5      |
+| std   |      14.3656 |     0.131603  |      16.137  |    0.500214 |
+| min   |       0      |     0         |      15      |    0        |
+| 25%   |      40      |     0         |      40      |    0        |
 | 50%   |      50      |     0         |      55      |    0.5      |
 | 75%   |      60      |     0         |      65      |    1        |
 | max   |      90      |     1         |      90      |    1        |
 
 
 Bfeor and after 
+
 |:-------------------------------------:|:-----------------------------------:|
 |:---------  Befor --------------------:|:------------ Aftre ----------------:|
+
 | ![Image](media//Count_plot_of_BfeorImg_sex.png) | ![image](media//Count_plot_of_AfterImg_sex.png)|
 | ![Image](media//Histogram_of_BfeorImg_age_approx.png) | ![image](media//Histogram_of_AfterImg_age_approx.png)|
 | ![Image](media//Count_plot_of_BfeorImg_anatomy_sites.png) | ![image](media//Count_plot_of_AfterImg_anatomy_sites.png)|
 | ![Image](media//Histogram_of_BfeorImg_target.png) | ![image](media//Histogram_of_AfterImg_target.png)|
 | ![Image](media//Count_plot_of_BfeorImg_benign_malignant.png) | ![image](media//Count_plot_of_AfterImg_benign_malignant.png)|
 | ![Image](media//Count_plot_of_BfeorImg_diagnosis.png) | ![image](media//Count_plot_of_AfterImg_diagnosis.png)|
-|:-----------------------------:|:----------------------------:|
+|:-----------------------------------:|:--------------------------------------:|
 
 
 
