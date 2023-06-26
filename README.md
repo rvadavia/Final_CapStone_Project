@@ -136,9 +136,9 @@
 | age_approx       |      20 |      17 |
 | anatomy_sites    |       6 |       6 |
 | benign_malignant |       2 |       2 |
-| diagnosis        |       9 |       6 |
+| diagnosis        |       9 |       4 |
 | image_name       |   33126 |    1168 |
-| patient_id       |    2056 |     817 |
+| patient_id       |    2056 |     801 |
 | sex              |       2 |       2 |
 | target           |       2 |       2 |
 
@@ -147,14 +147,14 @@
  ## Value counts befor & aftre  process :
 |    | Column           | Value           |   Count Befor |   Count After |
 |---:|:-----------------|:----------------|--------------:|--------------:|
-|  0 | sex              | male            |         17145 |           636 |
-|  1 | sex              | female          |         15981 |           532 |
-|  2 | anatomy_sites    | torso           |         17372 |           579 |
-|  3 | anatomy_sites    | lower extremity |          8417 |           272 |
-|  4 | anatomy_sites    | upper extremity |          4983 |           190 |
-|  5 | anatomy_sites    | head/neck       |          1855 |           109 |
-|  6 | anatomy_sites    | palms/soles     |           375 |            11 |
-|  7 | anatomy_sites    | oral/genital    |           124 |             7 |
+|  0 | sex              | male            |         17145 |           656 |
+|  1 | sex              | female          |         15981 |           512 |
+|  2 | anatomy_sites    | torso           |         17372 |           556 |
+|  3 | anatomy_sites    | lower extremity |          8417 |           284 |
+|  4 | anatomy_sites    | upper extremity |          4983 |           208 |
+|  5 | anatomy_sites    | head/neck       |          1855 |           105 |
+|  6 | anatomy_sites    | palms/soles     |           375 |             9 |
+|  7 | anatomy_sites    | oral/genital    |           124 |             6 |
 |  8 | benign_malignant | benign          |         32542 |           584 |
 |  9 | benign_malignant | malignant       |           584 |           584 |
 | 10 | target           | 0               |         32542 |           584 |
@@ -166,10 +166,10 @@
 |       |   age_approx |        target |   age_approx |      target |
 |:------|-------------:|--------------:|-------------:|------------:|
 | count |   33126      | 33126         |    1168      | 1168        |
-| mean  |      48.8691 |     0.0176297 |      53.8    |    0.5      |
-| std   |      14.3656 |     0.131603  |      15.8746 |    0.500214 |
+| mean  |      48.8691 |     0.0176297 |      53.2135 |    0.5      |
+| std   |      14.3656 |     0.131603  |      15.9521 |    0.500214 |
 | min   |       0      |     0         |      15      |    0        |
-| 25%   |      40      |     0         |      45      |    0        |
+| 25%   |      40      |     0         |      40      |    0        |
 | 50%   |      50      |     0         |      55      |    0.5      |
 | 75%   |      60      |     0         |      65      |    1        |
 | max   |      90      |     1         |      90      |    1        |
@@ -194,4 +194,90 @@ Bfeor and after
 |:------------------------------------:|:--------------------------------------:|
 
 
+
+Color_Histograms
+
+
+| ![filelabel](media//Score_plot_of_Color_Histograms.png) |
+
+avg_accuracy_score : 0.4897435897435898
+
+avg_precision_score : 0.5923076923076923
+
+avg_recall_score : 0.41359182822597457
+
+avg_f1_score : 0.28553658654543695
+
+
+
+
+Texture_Descriptor
+
+
+| ![filelabel](media//Score_plot_of_Texture_Descriptor.png) |
+
+avg_accuracy_score : 0.6521367521367522
+
+avg_precision_score : 0.633942487207386
+
+avg_recall_score : 0.7233555510939295
+
+avg_f1_score : 0.6753682052255269
+
+
+
+
+Gradient-based_Features
+
+
+| ![filelabel](media//Score_plot_of_Gradient-based_Features.png) |
+
+avg_accuracy_score : 0.7230769230769231
+
+avg_precision_score : 0.6769596971221586
+
+avg_recall_score : 0.8571447023918666
+
+avg_f1_score : 0.7562315385151355
+
+
+
+
+Local_Binary_atterns
+
+
+| ![filelabel](media//Score_plot_of_Local_Binary_atterns.png) |
+
+avg_accuracy_score : 0.6521367521367522
+
+avg_precision_score : 0.633942487207386
+
+avg_recall_score : 0.7233555510939295
+
+avg_f1_score : 0.6753682052255269
+
+
+
+
+
+
+Based on the scores calculated for the Color_Histograms, Texture_Descriptor, Gradient-based_Features, and Local_Binary_atterns models, here are the recommendation statements for each model:
+
+**Color_Histograms:**
+The Color_Histograms model shows moderate performance with an average accuracy score of approximately 49%. It has relatively better precision (59%) than recall (41%) based on the provided scores. The average F1 score of 28.6% suggests a trade-off between precision and recall.
+Recommendation: It is recommended to explore alternative feature representations or consider additional models to improve overall performance, as the Color_Histograms model has room for improvement in terms of accuracy, precision, and recall.
+
+**Texture_Descriptor:**
+The Texture_Descriptor model exhibits better performance compared to the Color_Histograms model, with an average accuracy score of approximately 65.2%. It shows a relatively balanced precision (63.4%) and recall (72.3%), resulting in an average F1 score of 67.5%.
+Recommendation: The Texture_Descriptor model can be further evaluated and optimized to enhance its performance. Fine-tuning the model's hyperparameters or exploring ensemble methods may help improve accuracy, precision, and recall.
+
+**Gradient-based_Features:**
+The Gradient-based_Features model demonstrates even better performance than the Texture_Descriptor model, with an average accuracy score of approximately 72.3%. It exhibits a relatively high precision (67.7%) and recall (85.7%), resulting in an average F1 score of 75.6%.
+Recommendation: The Gradient-based_Features model appears to be a promising choice. However, further evaluation, optimization, and validation are recommended to ensure the robustness and generalizability of the model.
+
+**Local_Binary_atterns:**
+The Local_Binary_atterns model shows performance similar to the Texture_Descriptor model, with an average accuracy score of approximately 65.2%. It exhibits comparable precision (63.4%) and recall (72.3%) scores, resulting in an average F1 score of 67.5%.
+Recommendation: Similar to the Texture_Descriptor model, the Local_Binary_atterns model can be further evaluated and potentially fine-tuned to improve its overall performance. Exploring alternative approaches or feature representations may also be considered.
+
+In summary, the Gradient-based_Features model demonstrates the best performance among the four models, followed by the Texture_Descriptor and Local_Binary_atterns models. The Color_Histograms model shows the lowest performance. It is recommended to carefully evaluate each model's strengths and weaknesses and consider further optimization techniques specific to each model to enhance their performance for the given task or problem. Additionally, comparing and combining the models' predictions or exploring ensemble methods could potentially lead to improved results.
 
